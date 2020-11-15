@@ -14,7 +14,7 @@ type Welcome struct {
 
 func main() {
 	//Instantiate Welcome struct object
-	welcome := Welcome{"Hello", time.Now().Format(time.Stamp)}
+	welcome := Welcome{"User", time.Now().Format(time.Stamp)}
 
 	//Locating html file
 	templates := template.Must(template.ParseFiles("templates/index.html"))
